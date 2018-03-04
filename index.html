@@ -1,0 +1,80 @@
+﻿<html>
+<head>
+    <title>Juego Javascript</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos01.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ 
+<div id="area">
+    <!--paredes-->
+    <div id="paredArriba"></div>
+    <div id="paredAbajo"></div>
+    <div id="paredIzquierda"></div>
+    <div id="paredDerecha"></div>
+    <div class="puertaC" id="door"></div>
+    <!--bloques-->
+
+    <div class="protaIdle" id="protagonist"></div>
+<!--<img src="img/Idle3.png"/>
+    <div class="box" id="box1">1</div>
+    <div  class="box" id="box2">2</div>
+    <div  class="box" id="box3">3</div>
+    <div  class="box" id="box4">4</div>
+-->
+</div>
+
+<div id="display">
+    
+    <div id="tabs">
+        <ul>
+            <li><a href="#puntuaciones">Puntuaciones</a></li>
+            <li><a href="#controles">Controles</a></li>
+            <li><a href="#record">Records</a></li>
+            <li><a href="#debug">debug</a></li>
+        </ul>
+        <div id="puntuaciones">
+            <p>Score: <span>0</span></p>
+            <p>Tiempo Restante: <span>180</span></p>
+            <p>Vidas: <span>4</span></p>
+        </div>
+        <div id="controles">
+            <p>W A S D -> Movimiento</p>
+            <p>Espacio -> Disparar</p>
+            <p>Puedes arrastrar obstaculos con el ratón</p>
+            <p>Tienes 60 segundos por nivel</p>
+            <p>Tienes 4 vidas por nivel</p>
+            <p>Dispone de 3 segundos inmunidad entre vidas</p>
+        </div>
+        <div id="record">
+        </div>
+        <div id="debug">
+            <p>Resolution</p>
+            <button id="bloquear" name="bloquear">Bloquear movimiento enemigo </button>
+            <button id="avanzar" name="avanzar">Avanzar Nivel </button>
+            <button id="perder" name="perder">Perder </button>
+            <button id="TimeOut" name="TimeOut">TimeOut </button>
+        </div>
+    </div>
+    
+</div>
+<div id="dialog-confirm" title="Has Perdido">
+    <p><span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span>Ha llegado al nivel: <bold></bold></p>
+</div>
+
+<div id="dialog-timeOut" title="Se te ha acabado el tiempo">
+    <p><span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span>Reinciar este nivel: <bold></bold></p>
+</div>
+
+
+<script src="http://underscorejs.org/underscore-min.js"></script>
+
+<script src="js/js01.js"></script>
+
+
+
+</body>
+</html>

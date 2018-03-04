@@ -1,0 +1,270 @@
+﻿    body {
+        padding: 0px;
+        color: #444;
+        font-family: Arial, sans-serif;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    #area {
+        border: 2px solid gray;
+        width: 800px;
+        height: 600px;
+        position: relative;
+        background-color: white;
+        overflow: hidden;
+        background-image: url("../img/floor.png") ;
+        background-repeat: repeat;
+        background-size: auto;
+
+
+    }
+    
+    #area > div:not(#protagonist) {
+        /*
+        background-color: rgba(122, 122, 122, 0.3);
+        
+        text-align: center;
+        font-size: 50px;
+        */
+        position: absolute;
+        width: 60px;
+        height: 60px;
+    }
+
+    #protagonist {
+        /*background-color: rgba(255, 0, 0, 0.5) !important;*/
+
+       /* border: 2px solid red !important;*/
+        position: absolute;
+        top: 150px;
+        left: 100px;
+        width: 55px;
+        height: 66px;
+    }
+
+    .obstaculo {
+        background-color: rgba(122, 122, 122, 0.3);
+        text-align: center;
+        font-size: 50px;
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background-image: url("../img/box.png");
+        background-size: cover;
+        filter: contrast(120%);
+    }
+    .obstaculo:hover
+    {
+        cursor: pointer;
+    }
+
+    #paredArriba {
+        background-color: none !important;
+        top: 5px;
+        font-size: 1px !important;
+        left: -10px;
+        margin:10px;
+        width:820px ;
+        height: 10px !important;
+        border: 2px solid black;
+        background-image: url("../img/wall.png") !important;
+        background-repeat: repeat;
+        background-size: auto;
+    }
+    #paredAbajo {
+        background-color: none !important;
+        top: 580px;
+        font-size: 1px !important;
+        left: -10px;
+        margin:10px;
+        width:820px ;
+        height:10px !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid black;
+        background-image: url("../img/wall.png") !important;
+        background-repeat: repeat;
+        background-size: auto;
+    }
+    #paredIzquierda {
+        background-color: none !important;
+        top: -10px;
+        left: 5px;
+        
+        margin:10px;
+
+        width:10px !important;
+        height:820px ;
+        border: 2px solid black;
+        background-image: url("../img/wall.png") !important;
+        background-repeat: repeat;
+        background-size: auto;
+    }
+
+    #paredDerecha {
+        background-color: none !important;
+        top: -10px;
+        left: 780px;
+        
+        margin:10px;
+
+        width:10px !important;
+        height:820px ;
+        border: 2px solid black;
+        background-image: url("../img/wall.png") !important;
+        background-repeat: repeat;
+        background-size: auto;
+    }
+
+    .protaIdle
+    {
+        background-image: url("../img/Idle3.png");
+    }
+    .protaIdleFlip
+    {
+        background-image: url("../img/Idle3_flip.png");
+    }
+
+    .protaMov
+    {
+        background-image: url("../img/movim.gif") !important;
+    }
+
+    .protaMov_flip
+    {
+        background-image: url("../img/movim_flip.gif") !important;
+    }
+
+    .enemigo
+    {
+        background-image: url("../img/enemy.gif") !important;
+    }
+
+    #display
+    {
+        position: absolute;
+        left: 1000px;
+        top: 10px;
+        width: 200px;
+    }
+
+    #display #bloquear
+    {
+        position: relative;
+        top: 10px;
+        left: 0px;
+        height: 100px;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    #display #avanzar
+    {
+        position: relative;
+        top: 10px;
+        left: 0px;
+        height: 100px;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    #display #perder
+    {
+        position: relative;
+        top: 10px;
+        left: 0px;
+        height: 100px;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    #display #TimeOut
+    {
+        position: relative;
+        top: 10px;
+        left: 0px;
+        height: 100px;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    #display li
+    {
+        width: auto;
+        font-size: 12px;
+    }
+
+    .proyectil
+    {
+        background-image: url("../img/Pineapple.png") !important;
+        width: 25px !important;
+        height: 35px !important;
+    }
+
+    .puertaC
+    {
+        background-image: url("../img/Basic_Door_Pixel.png") !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 100px;
+        left: -1px;  
+        margin: 0px;
+        width: 60px !important;
+        height: 70px !important;
+
+    }
+    .puertaA
+    {
+        background-image: url("../img/Basic_Door_Opening_Pixel.png") !important;
+        width: 64px !important;
+        height: 110px !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 100px;
+        left: -1px;  
+        margin: 0px;
+        width: 60px !important;
+        height: 70px !important;
+    }
+
+    .heart
+    {
+        width:125px !important;
+        height:125px !important;
+        float:left;
+        margin-left:2%;
+        position: initial !important;
+        margin-top: 20%;
+
+    }
+    .heart:first
+    {
+        margin-left:30%;
+    }
+
+/*
+    #paredAbajo {
+        top: 500px;
+        left: 160px;
+        margin:5px;
+    }
+
+    #paredIzquierda {
+        top: 200px;
+        left: 200px;
+        margin:5px;
+    }
+
+    #paredDerecha {
+        top: 50px;
+        left: 400px;
+        margin:5px;
+    }
+*/
+    p {
+        margin: 5px 0;
+    }
